@@ -7,6 +7,7 @@ basic.showLeds(`
     `)
 music.startMelody(music.builtInMelody(Melodies.PowerUp), MelodyOptions.Once)
 basic.pause(2000)
+basic.clearScreen()
 basic.forever(function () {
     if (maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 1) {
         maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 20)
